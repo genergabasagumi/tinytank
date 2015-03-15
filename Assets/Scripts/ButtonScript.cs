@@ -1,18 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ButtonScript : MonoBehaviour {
 	public static ButtonScript instance;
-	public GameObject MainMenu;
-	public GameObject PauseMenu;
-	public GameObject OptionsMenu;
-	public GameObject Achievements;
-	public GameObject Leaderboards;
-	public GameObject Help;
-	public GameObject About;
-	public GameObject GameOver;
-	public GameObject HUD;
-	public GameObject TankGame;
+	public List<GameObject> objects;
 
 	public void Awake() {
 		ShowMainMenu ();
@@ -25,23 +17,23 @@ public class ButtonScript : MonoBehaviour {
 	public void StartGame() {
 		DeactivateAll ();
 
-		HUD.SetActive (true);
-		TankGame.SetActive(true);
+		SetActive ("HUD", true);
+		SetActive ("TankGame", true);
 		GameManager.instance.init ();
 	}
 
 	public void PauseGame() {
 		DeactivateAll ();
 
-		PauseMenu.SetActive (true);
+		SetActive ("PauseMenu", true);
 	}
 
 	//use on resume or retry
 	public void ResumeGame(bool retry) {
 		DeactivateAll ();
 
-		HUD.SetActive (true);
-		TankGame.SetActive(true);
+		SetActive ("HUD", true);
+		SetActive ("TankGame", true);
 		//reinitialize mission on retry
 		if (retry) {
 			GameManager.instance.init();
@@ -49,58 +41,57 @@ public class ButtonScript : MonoBehaviour {
 	}
 	
 	public void ShowMainMenu() {
-		GameManager.instance.destroy ();
+		GameManager.destroy ();
 		DeactivateAll ();
 
-		MainMenu.SetActive (true);
+		SetActive ("MainMenu", true);
 	}
 
 	public void ShowLeaderboards() {
 		DeactivateAll ();
 		
-		Leaderboards.SetActive (true);
+		SetActive ("Leaderboards", true);
 	}
 	
 	public void ShowAchievements() {
 		DeactivateAll ();
 		
-		Achievements.SetActive (true);
+		SetActive ("Achievements", true);
 	}
 	
 	public void ShowOptions() {
 		DeactivateAll ();
 		
-		OptionsMenu.SetActive (true);
+		SetActive ("OptionsMenu", true);
 	}
 	
 	public void ShowHelp() {
 		DeactivateAll ();
 		
-		Help.SetActive (true);
+		SetActive ("Help", true);
 	}
 	
 	public void ShowAbout() {
 		DeactivateAll ();
 		
-		About.SetActive (true);
+		SetActive ("About", true);
 	}
 	
 	public void ShowGameOver() {
 		DeactivateAll ();
-		GameManager.instance.destroy ();
-		GameOver.SetActive (true);
+		GameManager.destroy ();
+		SetActive ("GameOver", true);
 	}
 	
 	private void DeactivateAll() {
-		MainMenu.SetActive (false);
-		PauseMenu.SetActive (false);
-		OptionsMenu.SetActive (false);
-		Achievements.SetActive (false);
-		Leaderboards.SetActive (false);
-		Help.SetActive (false);
-		About.SetActive (false);
-		GameOver.SetActive (false);
-		HUD.SetActive (false);
-		TankGame.SetActive (false);
+		foreach (GameObject obj in objects) {
+			obj.SetActive(false);
+		}
+	}
+
+	private void SetActive(string name, bool active) {
+		foreach (GameObject obj in objects) {
+			if(obj.name == name) obj.SetActive(active);
+		}
 	}
 }

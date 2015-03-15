@@ -223,14 +223,14 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>/Users/dev/GumiGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
- </Reference>
  <Reference Include="IFacebook">
  <HintPath>/Users/dev/GumiGame/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
  </Reference>
  <Reference Include="FacebookWinPhone8">
  <HintPath>/Users/dev/GumiGame/Assets/Plugins/FacebookWinPhone8.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>/Users/dev/GumiGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

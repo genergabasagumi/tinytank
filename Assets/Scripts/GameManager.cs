@@ -73,11 +73,13 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	public void destroy() {
-		spawning = false;
-		if (currentLevel != null) {
-			Destroy (currentLevel);
-			currentLevel = null;
+	public static void destroy() {
+		if (instance != null) {
+			instance.spawning = false;
+			if (instance.currentLevel != null) {
+				Destroy (instance.currentLevel);
+				instance.currentLevel = null;
+			}
 		}
 	}
 

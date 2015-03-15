@@ -874,16 +874,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda7d7e514e374b06a61d91d4562a5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu: {fileID: 833974127}
-  PauseMenu: {fileID: 36873905}
-  OptionsMenu: {fileID: 1477287216}
-  Achievements: {fileID: 1184643012}
-  Leaderboards: {fileID: 385986662}
-  Help: {fileID: 83175877}
-  About: {fileID: 1006114261}
-  GameOver: {fileID: 1346330468}
-  HUD: {fileID: 223665143}
-  TankGame: {fileID: 193514726}
+  objects:
+  - {fileID: 833974127}
+  - {fileID: 36873905}
+  - {fileID: 223665143}
+  - {fileID: 1477287216}
+  - {fileID: 385986662}
+  - {fileID: 1184643012}
+  - {fileID: 83175877}
+  - {fileID: 1006114261}
+  - {fileID: 1346330468}
+  - {fileID: 193514726}
 --- !u!1 &193514726
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &193514727
 Transform:
   m_ObjectHideFlags: 0

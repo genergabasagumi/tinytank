@@ -46,6 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CNControls\Editor\CNAbstractControllerInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNInputEditorTools.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNJoystickCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNJoystickInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNThrowableTouchpadInspector.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNTouchpadCreatorMenu.cs" />
+     <Compile Include="Assets\CNControls\Editor\CNTouchpadInspector.cs" />
      <Compile Include="Assets\Facebook\Editor\FacebookPostprocess.cs" />
      <Compile Include="Assets\Facebook\Editor\FacebookSettingsEditor.cs" />
      <Compile Include="Assets\Facebook\Editor\android\FacebookAndroidUtil.cs" />
@@ -279,20 +287,20 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="IFacebook">
+ <HintPath>/Users/dev/GumiGame/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
+ </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>/Users/dev/GumiGame/Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="FacebookWinPhone8">
+ <HintPath>/Users/dev/GumiGame/Assets/Plugins/FacebookWinPhone8.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
  <HintPath>/Users/dev/GumiGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
- <Reference Include="IFacebook">
- <HintPath>/Users/dev/GumiGame/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
- </Reference>
- <Reference Include="FacebookWinPhone8">
- <HintPath>/Users/dev/GumiGame/Assets/Plugins/FacebookWinPhone8.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
