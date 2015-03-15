@@ -24,12 +24,13 @@ public class TankBase : MonoBehaviour {
 		UpdateEffects ();
 	}
 
+	//Obsolete Resident Evil like movement controls
 	public void Move(float h, float v) {
 		//reverse turn direction when backing
 		if (v < 0) {
 			h = -h;
 		}
-		transform.Rotate (0, TurnAngle * h * Time.deltaTime, 0);
+		//transform.Rotate (0, TurnAngle * h * Time.deltaTime, 0);
 		float x = Mathf.Cos (transform.rotation.y * Mathf.Deg2Rad) * MoveSpeed * v * Time.deltaTime;
 		float y = Mathf.Sin (transform.rotation.y * Mathf.Deg2Rad) * MoveSpeed * v * Time.deltaTime;
 		transform.Translate (x, 0, y);
@@ -48,7 +49,7 @@ public class TankBase : MonoBehaviour {
 		foreach (GameObject obj in bullets) {
 			Bullet bullet = obj.GetComponent<Bullet> ();
 			if (!bullet.enabled) {
-				//effects.Add(Instantiate (VFXObject, obj.transform.position, Quaternion.identity) as GameObject);
+				effects.Add(Instantiate (VFXObject, obj.transform.position, Quaternion.identity) as GameObject);
 				bullets.Remove (obj);
 				Destroy (obj);
 				break;

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{348C90CD-006D-1EE1-CB97-E5FC33913A45}</ProjectGuid>
+	<ProjectGuid>{FDF3B633-6CC1-9B31-5010-25D8604BBD7B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -66,7 +66,6 @@
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_picker_search_box.xml" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\ColorCorrectionCurves.shader" />
-     <None Include="Assets\Photon Unity Networking\Demos\MarcoPolo-Tutorial\marcopolo-readme.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\values-ldpi\dimens.xml" />
      <None Include="Assets\SampleAssets\Effects\LightShafts\Shaders\SamplePositions.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\values\colors.xml" />
@@ -132,7 +131,6 @@
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_search_bar_layout.xml" />
      <None Include="Assets\Plugins\Android\facebook\bin\AndroidManifest.xml" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\GlobalFog.shader" />
-     <None Include="Assets\Photon Unity Networking\Demos\DemoBoxes\Resources\eurof_tt.txt" />
      <None Include="Assets\SampleAssets\Effects\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\SampleAssets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\ContrastStretch\Luminance.shader" />
@@ -163,12 +161,10 @@
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\TwirlEffect.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\VortexEffect.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\ContrastStretch\Adaptation.shader" />
-     <None Include="Assets\Photon Unity Networking\Demos\DemoPickup\Assets\3dFont\3dText.shader" />
      <None Include="Assets\Plugins\Android\facebook\res\layout\com_facebook_placepickerfragment_list_row.xml" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\SampleAssets\Effects\Shaders\MobileSpec.shader" />
      <None Include="Assets\SampleAssets\Vehicles\Car\CarGuidelines.txt" />
-     <None Include="Assets\Photon Unity Networking\readme.txt" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\VignettingShader.shader" />
      <None Include="Assets\SampleAssets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Plugins\Android\facebook\res\values\drawables.xml" />
@@ -207,8 +203,6 @@
      <None Include="Assets\Plugins\Android\facebook\res\values\styles.xml" />
      <None Include="Assets\Plugins\Android\facebook\res\values-xhdpi\dimens.xml" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\ScreenSpaceAmbientObscurance.shader" />
-     <None Include="Assets\Photon Unity Networking\changelog.txt" />
-     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\BlendForBloom.shader" />
@@ -216,18 +210,11 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="IFacebook">
- <HintPath>/Users/dev/GumiGame/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
+ <HintPath>/Users/dev/tinytank/Assets/Facebook/Scripts/IFacebook.dll</HintPath>
  </Reference>
  <Reference Include="FacebookWinPhone8">
- <HintPath>/Users/dev/GumiGame/Assets/Plugins/FacebookWinPhone8.dll</HintPath>
+ <HintPath>/Users/dev/tinytank/Assets/Plugins/FacebookWinPhone8.dll</HintPath>
  </Reference>
- <Reference Include="Photon3Unity3D">
- <HintPath>/Users/dev/GumiGame/Assets/Plugins/Photon3Unity3D.dll</HintPath>
- </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{44E8CFBA-2B7E-D34B-DAAC-E1032D41AF8F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

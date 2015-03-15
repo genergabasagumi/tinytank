@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject playerTank;	//Instanciate from Prefab
 
 	public Camera camera;
+	public CNJoystick Joystick;
 	int score;
 
 	void Awake() {

@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CNControls/Scripts/CNAbstractController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Bullet.cs" Line="37" Column="1" />
+      <File FileName="Assets/CNControls/Scripts/CNAbstractController.cs" Line="251" Column="5" />
+      <File FileName="Assets/CNControls/Scripts/CNJoystick.cs" Line="111" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
